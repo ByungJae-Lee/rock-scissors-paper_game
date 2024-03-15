@@ -1,0 +1,12 @@
+.main {
+  display: flex;
+  justify-content: center;
+}
+.box {
+  border: 1px solid black;
+  width: 400px;
+}
+
+.item-img {
+  width: 200px;
+}
