@@ -28,6 +28,8 @@ function App() {
   const [userSelect, setUserSelect] = useState(null);
   const [computerSelect, setComputerSelect] = useState(null);
   const [result, setResult] = useState("");
+  const [computerResult, setComputerResult] = useState("");
+
   const play = (userChoice) => {
     setUserSelect(choice[userChoice]);
     let computerChoice = randomChoice();
@@ -68,13 +70,19 @@ function App() {
   return (
     <>
       <div className="main">
-        <Box title="you" item={userSelect} result={result} />
+        <Box title="You" item={userSelect} result={result} />
         <Box title="Computer" item={computerSelect} result={result} />
       </div>
       <div className="main">
-        <button onClick={() => play("rock")}>Rock</button>
-        <button onClick={() => play("scissors")}>Scissors</button>
-        <button onClick={() => play("paper")}>Paper</button>
+        <button className="btn" onClick={() => play("rock")}>
+          Rock
+        </button>
+        <button className="btn" onClick={() => play("scissors")}>
+          Scissors
+        </button>
+        <button className="btn" onClick={() => play("paper")}>
+          Paper
+        </button>
       </div>
     </>
   );

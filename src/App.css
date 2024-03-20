@@ -3,10 +3,36 @@
   justify-content: center;
 }
 .box {
-  border: 1px solid black;
+  border: 10px solid black;
+  margin: 10px;
   width: 400px;
+  background-color: white;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+  font-size: 20pt;
 }
 
 .item-img {
   width: 150px;
+}
+
+.win {
+  border: 10px solid blue;
+}
+.lose {
+  border: 10px solid red;
+}
+.tie {
+  border: 10px solid black;
+}
+
+.btn {
+  margin: 10px;
+  font-size: 20pt;
+  border: 5px solid black;
+  border-radius: 10px;
+  height: 100px;
+  width: 200px;
+  cursor: pointer;
 }
